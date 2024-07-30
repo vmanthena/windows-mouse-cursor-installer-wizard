@@ -178,7 +178,7 @@ namespace AndroidUI.HolyLight
             }
             set
             {
-                if (value == null)
+                if (value == default(Color))
                     base.ForeColor = _defaultForeColor;
                 else
                 {
@@ -197,7 +197,7 @@ namespace AndroidUI.HolyLight
 
         private bool ShouldSerializeForeColor()
         {
-            return (!ForeColor.Equals(_defaultForeColor));
+            return !ForeColor.Equals(_defaultForeColor); // Check for null and compare values
         }
 
         public override string Text
