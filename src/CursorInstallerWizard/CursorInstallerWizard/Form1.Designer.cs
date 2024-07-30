@@ -59,7 +59,7 @@
 			this.AppStartingButton = new AndroidUI.HolyLight.AndroidButton();
 			this.SizeNESWButton = new AndroidUI.HolyLight.AndroidButton();
 			this.NWPenButton = new AndroidUI.HolyLight.AndroidButton();
-			this.HelpButton = new AndroidUI.HolyLight.AndroidButton();
+			this.CustomHelpButton = new AndroidUI.HolyLight.AndroidButton();
 			this.SizeNWSEButton = new AndroidUI.HolyLight.AndroidButton();
 			this.IBeamButton = new AndroidUI.HolyLight.AndroidButton();
 			this.ArrowButton = new AndroidUI.HolyLight.AndroidButton();
@@ -534,25 +534,25 @@
 			this.NWPenButton.Text = "androidButton1";
 			this.NWPenButton.Click += new System.EventHandler(this.CursorButton_Click);
 			// 
-			// HelpButton
+			// CustomHelpButton
 			// 
-			this.HelpButton.AutoSizeButton = true;
-			this.HelpButton.ButtonType = AndroidUI.HolyLight.AndroidButton.AndroidType.Icon;
-			this.HelpButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.HelpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-			this.HelpButton.Icon = global::CursorInstallerWizard.Properties.Resources._4_collections_collection;
-			this.HelpButton.IconLeftMargin = 0;
-			this.HelpButton.IconRightMargin = 0;
-			this.HelpButton.IconSize = 21;
-			this.HelpButton.Location = new System.Drawing.Point(269, 88);
-			this.HelpButton.MaximumSize = new System.Drawing.Size(32, 32);
-			this.HelpButton.MinimumSize = new System.Drawing.Size(32, 32);
-			this.HelpButton.Name = "HelpButton";
-			this.HelpButton.Padding = new System.Windows.Forms.Padding(5);
-			this.HelpButton.Size = new System.Drawing.Size(32, 32);
-			this.HelpButton.TabIndex = 4;
-			this.HelpButton.Text = "androidButton1";
-			this.HelpButton.Click += new System.EventHandler(this.CursorButton_Click);
+			this.CustomHelpButton.AutoSizeButton = true;
+			this.CustomHelpButton.ButtonType = AndroidUI.HolyLight.AndroidButton.AndroidType.Icon;
+			this.CustomHelpButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.CustomHelpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+			this.CustomHelpButton.Icon = global::CursorInstallerWizard.Properties.Resources._4_collections_collection;
+			this.CustomHelpButton.IconLeftMargin = 0;
+			this.CustomHelpButton.IconRightMargin = 0;
+			this.CustomHelpButton.IconSize = 21;
+			this.CustomHelpButton.Location = new System.Drawing.Point(269, 88);
+			this.CustomHelpButton.MaximumSize = new System.Drawing.Size(32, 32);
+			this.CustomHelpButton.MinimumSize = new System.Drawing.Size(32, 32);
+			this.CustomHelpButton.Name = "CustomHelpButton";
+			this.CustomHelpButton.Padding = new System.Windows.Forms.Padding(5);
+			this.CustomHelpButton.Size = new System.Drawing.Size(32, 32);
+			this.CustomHelpButton.TabIndex = 4;
+			this.CustomHelpButton.Text = "androidButton1";
+			this.CustomHelpButton.Click += new System.EventHandler(this.CursorButton_Click);
 			// 
 			// SizeNWSEButton
 			// 
@@ -808,7 +808,7 @@
 			this.Controls.Add(this.AppStartingButton);
 			this.Controls.Add(this.SizeNESWButton);
 			this.Controls.Add(this.NWPenButton);
-			this.Controls.Add(this.HelpButton);
+			this.Controls.Add(this.CustomHelpButton);
 			this.Controls.Add(this.SizeNWSEButton);
 			this.Controls.Add(this.IBeamButton);
 			this.Controls.Add(this.ArrowButton);
@@ -904,7 +904,7 @@
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label16;
 		private AndroidUI.HolyLight.AndroidButton ArrowButton;
-		private AndroidUI.HolyLight.AndroidButton HelpButton;
+		private AndroidUI.HolyLight.AndroidButton CustomHelpButton; // Renamed to avoid conflict
 		private AndroidUI.HolyLight.AndroidButton AppStartingButton;
 		private AndroidUI.HolyLight.AndroidButton WaitButton;
 		private AndroidUI.HolyLight.AndroidButton CrosshairButton;

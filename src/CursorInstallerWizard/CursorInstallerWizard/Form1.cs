@@ -162,7 +162,7 @@ namespace CursorInstallerWizard
             {
                 File.Delete(path + "\\Install.inf");
             }
-            catch (IOException e)
+            catch (IOException)
             {
             }
             File.Move(tempzipFilePath.FullName, path + "\\" + PackageName.Text + ".zip", true);
@@ -237,7 +237,7 @@ namespace CursorInstallerWizard
                     openFileDialog1.FileName = "";
                     break;
 
-                case "HelpButton":
+                case "CustomHelpButton":
                     if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                     {
                         Console.WriteLine(openFileDialog1.FileName);
@@ -251,6 +251,7 @@ namespace CursorInstallerWizard
                     }
                     openFileDialog1.FileName = "";
                     break;
+
 
                 case "IBeamButton":
                     if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
